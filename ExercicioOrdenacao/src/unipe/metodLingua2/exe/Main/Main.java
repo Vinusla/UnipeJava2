@@ -40,9 +40,18 @@ public class Main {
 
 		}
 
-		System.out.println("\n\nCom Ordenação");
-		
+		System.out.println("\n\n\nCom Ordenação\n\nMaior saldo");
+
 		Collections.sort(contas);
+
+		for (Conta c : contas) {
+			System.out.println(c);
+
+		}
+
+		System.out.println("\n\nMenor Saldo");
+
+		Collections.reverse(contas);
 
 		for (Conta c : contas) {
 			System.out.println(c);
